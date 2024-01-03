@@ -1,4 +1,5 @@
-st-In First-Out caching module.
+#!/usr/bin/env python3
+"""Task 2: LIFO Caching.
 """
 from collections import OrderedDict
 

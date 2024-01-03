@@ -1,18 +1,20 @@
-st Recently Used caching module.
-"""
-from collections import OrderedDict
+#!/usr/bin/env python3
+'''Task 3: LRU Caching
+'''
 
+
+from collections import OrderedDict
 from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
-    """Represents an object that allows storing and
-    retrieving items from a dictionary with a LRU
-    removal mechanism when the limit is reached.
-    """
+    '''A class `LRUCache` that inherits from
+       `BaseCaching` and is a caching system
+    '''
+
     def __init__(self):
-        """Initializes the cache.
-        """
+        '''initialize the cache
+        '''
         super().__init__()
         self.cache_data = OrderedDict()
 

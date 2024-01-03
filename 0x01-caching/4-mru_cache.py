@@ -1,5 +1,5 @@
-
-st Recently Used caching module.
+#!/usr/bin/env python3
+"""Task 4: MRU Caching.
 """
 from collections import OrderedDict
 
@@ -7,9 +7,8 @@ from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
-    """Represents an object that allows storing and
-    retrieving items from a dictionary with an MRU
-    removal mechanism when the limit is reached.
+    """A class `MRUCache` that inherits
+       from `BaseCaching` and is a caching system
     """
     def __init__(self):
         """Initializes the cache.
